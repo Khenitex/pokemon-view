@@ -1,0 +1,36 @@
+{
+  "name": "pokemon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development --whatch --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Khenitex/pokemon-view.git"
+  },
+  "author": "Yelisson Ortiz  y Oliver Duran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Khenitex/pokemon-view/issues"
+  },
+  "homepage": "https://github.com/Khenitex/pokemon-view#readme",
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-loader": "^8.1.0",
+    "html-webpack-plugin": "^4.2.0",
+    "normalize": "^0.3.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.9.4",
+    "webpack": "^4.43.0",
+    "webpack-server": "^0.1.2"
+  }
+}

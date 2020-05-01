@@ -1,11 +1,15 @@
 html {
     font-size: 62.5%;
+
 }
 
 body {
     box-sizing: border-box;
     margin: 0;
     background-color: #fff;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-family: 'Courier Prime', monospace;
+    
 }
 
 img{
@@ -14,7 +18,7 @@ img{
 
 h1 {
     display: inline-block;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #ffcc33;
     background-color: rgba(0, 0, 0, .6);
     padding: .5rem .5rem;
@@ -23,63 +27,85 @@ h1 {
 
 p{
     color: rgba(0, 0, 0, .6);
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 1.5;
     margin: 0;
 }
 
 a{
+    font-family:Georgia, 'Times New Roman', Times, serif ;
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    font-size: 4rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     padding: 1rem;
-    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: 'Courier Prime', monospace;
 }
 
-a:hover{
-    cursor: pointer;
-    border-bottom: .5rem solid #ffcc33;
-    margin-top: .5rem;
+
+a:last-child{
+    margin-right: 0;
 }
 
-nav a:first-child{
-    margin-left: 0;
+i {
+    padding: 1rem;
+    color: #ffcc33;
 }
+
 
 .container {
     max-width: 120rem;
-    margin: 10rem auto;
+    margin: 0 auto;
+    width: 97%;
 }
 
 .container img {
-    max-width: 30%;
-    transition: transform 1s ease;
+    max-width: 50%;
+    margin: 2rem 0;
 }
 
-.container img:hover{
-    transform: scale(1.8);
+
+.banner{
+    background-color: #000;
+    padding-bottom: 2rem;
 }
 
 
 .header {
-    background-color: rgba(0, 0, 0, 1);
-    padding: 3rem;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
 }
 
-.desc{
-    padding: 2rem;
-    height: 40rem;
-    background-color:rgba(0, 0, 0,0) ;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    border: 1px solid #000;
-    box-shadow: 0px 3px 3px  #696969;
-    overflow: hidden;
+.pokemon-logo{
+    transition: transform .4s ease;
+}
+
+
+
+@media (min-width:768px){
+    .container img {
+        max-width: 75%;
+    }
+
+    .nav-bar{
+        display: flex;
+        padding: 0 1rem ;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 6rem;
+    }
+
+    .nav-bar a {
+        font-size: 4rem;
+        transition: all .1s ease-in-out;
+    }
+    a:hover {
+        cursor: pointer;
+        border-bottom: 5px solid #fff;
+        padding-top: .5rem;
+    }
+    .pokemon-logo:hover{
+        transform: scale(1.1)
+    }
 }
